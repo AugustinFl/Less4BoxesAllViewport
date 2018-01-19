@@ -26,3 +26,6 @@ And then calling it for each child:<br>
     .mixin(0,50%);<br>
     .mixin(50%,0);<br>
     .mixin(50%,50%);<br>
+
+
+Final result: https://codepen.io/AugustinF/pen/QazyXE
