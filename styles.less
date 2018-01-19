@@ -1,0 +1,25 @@
+.mixin(@top: 0; @left: 0;) {
+    top: @top;
+    left: @left;
+}
+article {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    &:nth-child(1) {
+        .mixin();
+        background-color: red;
+    }
+    &:nth-child(2) {
+        .mixin(0, 50%);
+        background-color: yellow;
+    }
+    &:nth-child(3) {
+        .mixin(50%, 0);
+        background-color: blue;
+    }
+    &:nth-child(4) {
+        .mixin(50%, 50%);
+        background-color: green;
+    }
+}

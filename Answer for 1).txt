@@ -1,0 +1,20 @@
+Exercise 1)
+- Solution a using position: fixed;
+    top: 0; left: 0
+    top: 0; right: 0
+    bottom: 0; left: 0
+    bottom: 0; right: 0
+- Solution b - improvement to use only top and left
+top: 0; left: 0
+top: 0; left: 50%
+top: 50%; left: 0
+top: 50%; left: 50%
+Less approach:
+- Solution c - implementing mixins
+.mixin(@top: 0; @left: 0;) {
+  top: @top;
+  left: @left;
+}
+And then calling it for each child: .mixin();.mixin(0,50%);.mixin(50%,0);.mixin(50%,50%);
+
+https://codepen.io/anon/pen/YYdyGp
