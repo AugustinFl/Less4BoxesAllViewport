@@ -18,7 +18,11 @@ Exercise 1)
 Less approach:<br>
 - Solution c - implementing mixins<br>
 .mixin(@top: 0; @left: 0;) {<br>
-  top: @top;<br>
-  left: @left;<br>
+            top: @top;<br>
+            left: @left;<br>
 }<br>
-And then calling it for each child: .mixin();.mixin(0,50%);.mixin(50%,0);.mixin(50%,50%);
+And then calling it for each child:<br>
+    .mixin();
+    .mixin(0,50%);<br>
+    .mixin(50%,0);<br>
+    .mixin(50%,50%);<br>
